@@ -11,6 +11,7 @@ using namespace std;
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+
 struct Vertex {
 	// Position
 	glm::vec3 Position;
@@ -23,7 +24,7 @@ struct Vertex {
 struct Texture {
 	GLuint id;
 	string type;
-	aistring path;
+	aiString path;
 };
 
 class Mesh {

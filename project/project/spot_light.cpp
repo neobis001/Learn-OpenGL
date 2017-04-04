@@ -167,7 +167,6 @@ int main()
 	glBindVertexArray(0);
 
 
-
 	// Then, we set the light's VAO (VBO stays the same. After all, the vertices are the same for the light object (also a 3D cube))
 	GLuint lightVAO;
 	glGenVertexArrays(1, &lightVAO);

@@ -1,2 +1,35 @@
-﻿  project.vcxproj -> C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\project.exe
+﻿  spot_c_plus_plus.cpp
+spot_c_plus_plus.cpp(236): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(292): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+spot_c_plus_plus.cpp(293): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+spot_c_plus_plus.cpp(381): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(382): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(386): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(387): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(389): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(390): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+spot_c_plus_plus.cpp(397): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  249 of 255 functions (97.6%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+glfw3.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(context.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(init.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(input.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(input.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(monitor.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(monitor.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(vulkan.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(vulkan.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(window.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_init.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_joystick.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_joystick.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_monitor.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_monitor.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_time.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_time.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_tls.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_tls.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_window.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(wgl_context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(wgl_context.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glfw3.lib(egl_context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(egl_context.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\glfw.pdb'; linking object as if no debug info
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\vc120.pdb'; linking object as if no debug info
+  project.vcxproj -> C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\project.exe
   project.vcxproj -> C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\project.pdb (Full PDB)
