@@ -37,7 +37,7 @@
     <None Include="shader.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="spot_c_plus_plus.cpp">
+    <ClCompile Include="multi_lights_example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

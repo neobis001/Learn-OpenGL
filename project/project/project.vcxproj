@@ -72,6 +72,10 @@
     <IncludePath>C:\Users\Nicolas\Desktop\learnogl\Include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Nicolas\Desktop\learnogl\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Nicolas\Desktop\learnogl\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Nicolas\Desktop\learnogl\Libs32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -97,6 +101,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -126,7 +131,7 @@
     <None Include="shader.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="spot_c_plus_plus.cpp" />
+    <ClCompile Include="multi_lights_example.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
