@@ -208,7 +208,7 @@ int main()
 	// Set texture units
 	lightingShader.Use();
 	glUniform1i(glGetUniformLocation(lightingShader.Program, "diffuse"), 0);
-	glUniform1i(glGetUniformLocation(lightingShader.Program, "specular"), 1);
+	glUniform1i(glGetUniformLocation(lightingShader.Program, "specular"), 0);
 
 
 	// Game loop
