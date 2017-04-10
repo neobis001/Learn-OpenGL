@@ -43,7 +43,7 @@ GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
 
 							// The MAIN function, from here we start the application and run the game loop
-int main()
+int main(int argc, char *argv[])
 {
 	// Init GLFW
 	glfwInit();
@@ -75,7 +75,6 @@ int main()
 
 	// OpenGL options
 	glEnable(GL_DEPTH_TEST);
-
 
 	// Build and compile our shader program
 	Shader lightingShader("multi_map_example.vs", "multi_map_example.frag");
@@ -226,7 +225,6 @@ int main()
 		// Clear the colorbuffer
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
 
 		// Use cooresponding shader when setting uniforms/drawing objects
 		lightingShader.Use();

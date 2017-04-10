@@ -1,25 +1,18 @@
-﻿  multi_lights_example.cpp
-multi_lights_example.cpp(218): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(254): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(255): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(262): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(263): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(270): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(271): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(279): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(280): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-multi_lights_example.cpp(393): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(394): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(398): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(399): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(401): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(402): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-multi_lights_example.cpp(409): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+﻿  stencil_testing.cpp
+stencil_testing.cpp(171): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(229): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+stencil_testing.cpp(318): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(319): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(323): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(324): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(326): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(327): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+stencil_testing.cpp(334): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  22 of 363 functions ( 6.1%) were compiled, the rest were copied from previous compilation.
+  21 of 359 functions ( 5.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    5 functions had inline decision re-evaluated but remain unchanged
+    4 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   project.vcxproj -> C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\project.exe
   project.vcxproj -> C:\Users\Nicolas\Desktop\learnogl\project\x64\Release\project.pdb (Full PDB)

@@ -52,12 +52,20 @@ int main()
 
 
 	// Set up vertex data (and buffer(s)) and attribute pointers
-	GLfloat vertices[] = {
+	/*GLfloat vertices[] = {
 		// Positions          // Colors           // Texture Coords
 		0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // Top Right
 		0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // Bottom Right
 		-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // Bottom Left
 		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // Top Left 
+	};*/
+
+	GLfloat vertices[] = {
+		// Positions          // Colors           // Texture Coords
+		0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   3.0f, 3.0f, // Top Right
+		0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   3.0f, 0.0f, // Bottom Right
+		-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // Bottom Left
+		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 3.0f  // Top Left 
 	};
 	GLuint indices[] = {  // Note that we start from 0!
 		0, 1, 3, // First Triangle

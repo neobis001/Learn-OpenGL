@@ -1,9 +1,18 @@
-﻿LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  depth_testing_func.cpp
+depth_testing_func.cpp(184): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(294): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(295): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(299): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(300): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(302): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(303): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+depth_testing_func.cpp(310): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  325 of 367 functions (88.6%) were compiled, the rest were copied from previous compilation.
-    7 functions were new in current compilation
-    12 functions had inline decision re-evaluated but remain unchanged
+  3 of 361 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    27 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
 glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Nicolas\Desktop\learnogl\project\Release\vc120.pdb'; linking object as if no debug info
   project.vcxproj -> C:\Users\Nicolas\Desktop\learnogl\project\Release\project.exe

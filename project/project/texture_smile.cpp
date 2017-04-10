@@ -57,7 +57,7 @@ int main()
 		0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // Top Right
 		0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // Bottom Right
 		-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // Bottom Left
-		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // Top Left 
+		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f,  // Top Left 
 	};
 	GLuint indices[] = {  // Note that we start from 0!
 		0, 1, 3, // First Triangle
@@ -128,6 +128,32 @@ int main()
 	SOIL_free_image_data(image);
 	glBindTexture(GL_TEXTURE_2D, 0);
 
+	
+	
+	float testArray[4];
+	//glGetIntegeri_v(GL_VIEWPORT_BOUNDS_RANGE, 0, testArray);
+	/*
+	glGetIntegerv(GL_VIEWPORT, testArray);
+	for (int i = 0; i < 4; i++) {
+		std::cout << testArray[i] << " ";
+	}
+	std::cout << std::endl;
+	*/
+
+	/*
+	//glGetIntegeri_v(GL_VIEWPORT, 3, testArray);
+	glGetFloatv(GL_VIEWPORT);
+	for (int i = 0; i < 4; i++) {
+		std::cout << testArray[i] << " ";
+	}
+	std::cout << std::endl;
+	*/
+	
+	/*
+	int testNumber;
+	glGetIntegerv(GL_MAX_TEXTURE_IMAGE_UNITS, &testNumber);
+	std::cout << testNumber;
+	*/
 
 	// Game loop
 	while (!glfwWindowShouldClose(window))
@@ -142,11 +168,12 @@ int main()
 
 		// Activate shader
 		ourShader.Use();
+		glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture1"), 0);
 
 		// Bind Textures using texture units
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, texture1);
-		glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture1"), 0);
+
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, texture2);
 		glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture2"), 1);

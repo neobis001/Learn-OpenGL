@@ -131,7 +131,7 @@
     <None Include="shader.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="multi_lights_example.cpp" />
+    <ClCompile Include="stencil_testing.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

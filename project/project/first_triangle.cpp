@@ -43,13 +43,15 @@ int main()
 	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "LearnOpenGL", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 
-	// Set the required callback functions
-	glfwSetKeyCallback(window, key_callback);
 
 	// Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
 	glewExperimental = GL_TRUE;
 	// Initialize GLEW to setup the OpenGL Function pointers
 	glewInit();
+
+	// Set the required callback functions
+	glfwSetKeyCallback(window, key_callback);
+
 
 	// Define the viewport dimensions
 	int width, height;
@@ -116,7 +118,6 @@ int main()
 	glEnableVertexAttribArray(0);
 
 	glBindBuffer(GL_ARRAY_BUFFER, 0); // Note that this is allowed, the call to glVertexAttribPointer registered VBO as the currently bound vertex buffer object so afterwards we can safely unbind
-
 	glBindVertexArray(0); // Unbind VAO (it's always a good thing to unbind any buffer/array to prevent strange bugs)
 
 						  // Game loop
