@@ -71,9 +71,10 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
 	glEnable(GL_STENCIL_TEST);
-	glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
-	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 
+	glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+	//glStencilOp(GL_REPLACE, GL_REPLACE, GL_KEEP);
+	glStencilOp(GL_KEEP, GL_REPLACE, GL_REPLACE);
 	// Setup and compile our shaders
 	Shader shader("depth_testing.vs", "depth_testing.frag");
 	Shader shaderSingleColor("depth_testing.vs", "stencil_single_color.frag");
@@ -164,6 +165,7 @@ int main()
 	GLuint floorTexture = loadTexture("depth_floor_tex.jpg");
 #pragma endregion
 
+
 	// Game loop
 	while (!glfwWindowShouldClose(window))
 	{
@@ -192,6 +194,7 @@ int main()
 		glUniformMatrix4fv(glGetUniformLocation(shader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 
 
+
 		// Draw floor as normal, we only care about the containers. The floor should NOT fill the stencil buffer so we set its mask to 0x00
 		glStencilMask(0x00);
 		// Floor
@@ -206,6 +209,9 @@ int main()
 		// 1st. Render pass, draw objects as normal, filling the stencil buffer
 		glStencilFunc(GL_ALWAYS, 1, 0xFF);
 		glStencilMask(0xFF);
+
+
+
 		// Cubes
 		glBindVertexArray(cubeVAO);
 		glBindTexture(GL_TEXTURE_2D, cubeTexture);

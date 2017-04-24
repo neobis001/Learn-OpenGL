@@ -1,1 +1,0 @@
-the soil file in the same directory as this txt is for 32 bit. causes error when combined w/ 64 bit. could note that in a blog

@@ -1,0 +1,2 @@
+Stencil bit value: 0
+Error value: 0
