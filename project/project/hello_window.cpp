@@ -7,7 +7,6 @@
 // GLFW
 #include <GLFW/glfw3.h>
 
-
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
@@ -56,7 +55,7 @@ int main()
 	while (!glfwWindowShouldClose(window))
 	{
 		// Check if any events have been activiated (key pressed, mouse moved etc.) and call corresponding response functions
-		glfwPollEvents();
+		
 
 		// Render
 		// Clear the colorbuffer
@@ -65,6 +64,7 @@ int main()
 
 		// Swap the screen buffers
 		glfwSwapBuffers(window);
+		glfwPollEvents();
 	}
 
 	// Terminate GLFW, clearing any resources allocated by GLFW.

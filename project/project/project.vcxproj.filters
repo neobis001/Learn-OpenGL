@@ -37,7 +37,7 @@
     <None Include="shader.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stencil_testing.cpp">
+    <ClCompile Include="shadow_mapping4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
